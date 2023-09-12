@@ -737,8 +737,6 @@ namespace dddl {
         return slice(dims);
     }
 
-    /* TODO */
-
     template<typename MType>
     void Matrix<MType>::T() {
         check_initialized();
