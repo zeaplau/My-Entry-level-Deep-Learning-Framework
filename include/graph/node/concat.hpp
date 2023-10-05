@@ -53,8 +53,8 @@ namespace dddl {
 
         template<typename MType>
         void ConcatNode<MType>::backward(node_ptr output_node) {
-
+            compute_jacobi(Node<MType>::jacobi, output_node);
+            Node<MType>::wait_backward = false;
         }
-
     }
 }
